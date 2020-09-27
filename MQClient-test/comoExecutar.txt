@@ -1,0 +1,35 @@
+****Dentro da pasta MQClient-test
+
+1 Acesse o arquivo JmsPutGet.java - ajuste da linha 56 a 63 de acordo com sua configuracao de MQ.
+
+2 Execute via terminal o seguinte comando para gerar .class ****Dentro da pasta MQClient-test
+    javac -cp ./com.ibm.mq.allclient-9.1.5.0.jar:./javax.jms-api-2.0.1.jar com/ibm/mq/samples/jms/JmsPutGet.java
+
+3 Após executar o passo 2, execute via terminal a linha de comando abaixo ****Dentro da pasta MQClient-test
+java -cp ./com.ibm.mq.allclient-9.1.5.0.jar:./javax.jms-api-2.0.1.jar:. com.ibm.mq.samples.jms.JmsPutGet
+
+Resultado esperado parecido com isso
+
+Sent message:
+
+  JMSMessage class: jms_text
+  JMSType:          null
+  JMSDeliveryMode:  2
+  JMSDeliveryDelay: 0
+  JMSDeliveryTime:  1601245867492
+  JMSExpiration:    0
+  JMSPriority:      4
+  JMSMessageID:     ID:414d5120514d312020202020202020207adb6f5f04a26320
+  JMSTimestamp:     1601245867492
+  JMSCorrelationID: null
+  JMSDestination:   queue:///DEV.QUEUE.1
+  JMSReplyTo:       null
+  JMSRedelivered:   false
+    JMSXAppID: JmsPutGet (JMS)             
+    JMSXDeliveryCount: 0
+    JMSXUserID: app         
+    JMS_IBM_PutApplType: 28
+    JMS_IBM_PutDate: 20200927
+    JMS_IBM_PutTime: 22310756
+Numero da msg 421
+SUCCESS
